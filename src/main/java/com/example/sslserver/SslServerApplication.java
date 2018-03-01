@@ -21,7 +21,7 @@ class SecuredServerController {
     
     @RequestMapping("/secured")
     public String secured(){
-	System.out.println("Inside secured()");
+	System.out.println("Inside secured()"+ System.currentTimeMillis());
 	return "Hello user !!! : " + new Date();
     }
     
